@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spede"
+version = "0.0.1"
+description = "A typing test written in Python."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [ { name = "Patrick Hofmann", email = "patrickhofmanndesigns@gmail.com" } ]
+dependencies = [ "requests" ]
+
+[project.optional-dependencies]
+windows = [ "windows-curses" ]
+test = [ "" ]
+docs = [ "" ]
+dev = [ "spede[test, docs]", "pre-commit" ]
+all = [ "spede[windows, test]" ]
+
+[project.urls]
+homepage = "https://github.com/The-PPWD/Spede"
+
+[project.scripts]
+spede = "spede:main"
