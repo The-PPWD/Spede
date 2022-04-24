@@ -14,8 +14,8 @@ dependencies = [ "requests" ]
 
 [project.optional-dependencies]
 windows = [ "windows-curses" ]
-test = [ "" ]
-docs = [ "" ]
+# test = [ "" ]
+# docs = [ "" ]
 dev = [ "spede[test, docs]", "pre-commit" ]
 all = [ "spede[windows, test]" ]
 
@@ -24,3 +24,4 @@ homepage = "https://github.com/The-PPWD/Spede"
 
 [project.scripts]
 spede = "spede:main"
+

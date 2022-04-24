@@ -1,6 +1,7 @@
-.idea/
-.mypy_cache/
-.venv/
 build/
 dist/
+.mypy_cache/
+__pycache__/
+.venv/
 spede.egg-info/
+
